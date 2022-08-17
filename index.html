@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results Table</title>
+  <link rel="stylesheet" href="https://static.law360news.com/201909/assets/responsive-next-d1d2eb358b6cad9791bb0f0ada81454f8b7d4b6fc1a5034f5f1fd02bd80391f4.css" />
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" /> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+  <script type="text/javascript" src="selectize.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="selectize.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div id="article">
+    <table id="antitrust-table" class="table row-border">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Alias</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Allegation</th>
+          <!-- <th>Description</th> -->
+          <th></th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th class='no-vertalign'>Name</th>
+          <th class='vertalign'>Alias</th>
+          <th class='vertalign'>Type</th>
+          <th class='vertalign'>Date</th>
+          <th class='vertalign'>Allegation</th>
+          <!-- <th class='vertalign'>Description</th> -->
+          <th class='vertalign'></th>
+        </tr>
+      </tfoot>
+      <tbody>
+      </tbody>
+    </table>
+    <!-- <br /><br />
+    <div class="d3-container">
+      <div class="chart">
+        <div class="third">
+          <span class="hed">Competition and Antitrust Law Enforcement Reform Act</span>
+          <em class="dek"><a href="https://www.law360.com/articles/1352222" target="_blank">Introduced</a> by Sen. Klobuchar on Feb. 4</em>
+          <ul>
+            <strong>Merger‌ ‌reforms‌</strong>
+            <li>Update‌ ‌language‌ ‌of‌ ‌the‌ ‌Clayton‌ ‌Act‌‌</li>
+            <li>Shift‌ ‌burden‌ ‌of‌ ‌proof‌ ‌for‌ ‌certain‌ ‌mergers‌ ‌(deals‌ ‌worth‌ ‌$5B,‌ ‌cause‌ ‌market‌ ‌concentration‌ ‌or‌ involve‌ ‌acqusitions‌ ‌of‌ ‌competitors‌ ‌or‌ ‌nascent‌ competitors)‌</li>
+            <li>Establish a new ‌FTC‌ ‌division‌ ‌to‌ ‌study‌ ‌markets,‌ ‌past‌ mergers‌</li>
+            <li>Dominant‌ ‌firm‌ ‌conduct‌ ‌reforms‌ ‌</li>
+            <li>Adds‌ ‌an‌ ‌"exclusionary‌ ‌conduct" ‌prong‌ ‌to‌ ‌the‌ Clayton‌ ‌Act‌</li>
+            <li>Civil‌ ‌monetary‌ ‌penalties‌ ‌for‌ ‌Sherman‌ ‌Act‌ ‌violations‌ ‌</li>
+            <li>Protection‌ ‌and‌ ‌compensation‌ ‌for‌ ‌whistleblowers‌ ‌</li>
+            <li>Increase‌ ‌FTC,‌ ‌DOJ‌ ‌resources‌</li>
+          </ul>
+        </div>
+        <div class="third">
+          <span class="hed">Trust-Busting for the Twenty-First Century Act</span>
+          <em class="dek"><a href="https://www.law360.com/articles/1374386" target="_blank">Introduced</a> by Sen. Hawley on April 19</em>
+          <ul>
+            <li>Ban‌ ‌mergers‌ ‌by‌ ‌companies‌ ‌with‌ ‌$100B‌ ‌market‌ capitalization‌</li>
+            <li>Enable‌ ‌FTC‌ ‌to‌ ‌designate‌ ‌"dominant‌ ‌digital‌ ‌firms"</li>
+            <li>Ban‌ ‌the ‌platforms from buying‌ ‌of‌ ‌potential‌ ‌competitors‌</li>
+            <li>Ban‌ ‌the ‌platforms from privileging‌ ‌of‌ ‌own‌ ‌search‌ ‌results‌ </li>
+            <li>Update language of the Clayton‌ ‌and‌ ‌Sherman‌ ‌Acts‌</li>
+            <li>Make‌s ‌clear‌ that ‌direct‌ ‌evidence‌ ‌of‌ ‌anti-competitive‌ ‌conduct‌ ‌is‌ enough‌</li>
+            <li>Updates ‌standard‌‌ to‌ ‌emphasize‌ ‌protection‌ ‌of‌ ‌competition‌</li>
+            <li>Clarify‌ ‌that‌ ‌vertical‌ ‌mergers‌ ‌are‌ ‌not‌ ‌exempt‌ ‌from‌ ‌enforcement</li>
+            <li>Increase‌ ‌penalties‌</li>
+          </ul>
+        </div>
+        <div class="third">
+          <span class="hed">Tougher Enforcement Against Monopolies (TEAM) Act</span>
+          <em class="dek"><a href="https://www.law360.com/articles/1394174/" target="_blank">Introduced</a> by Sen. Lee on June 14</em>
+          <ul>
+            <strong>Structural ‌reforms‌</strong>
+            <li>Give DOJ all of FTC's antitrust authority. increase DOJ funding</li>
+            <li>Requires written statement when no action taken</li>
+            <li>Codify consumer welfare standard (courts can consider effects on price, output, quality, innovation and choice)</li>
+            <br />
+            <strong>Merger‌ ‌reforms‌</strong>
+            <li>Increases merger filing fees</li>
+            <li>New presumptions (deals resulting in 33% market share presumed unlawful, bans mergers resulting in 66%)</li>
+            <li>Require notice for deals by state-owned enties and cos. with $500B in assets</li>
+            <br />
+            <strong>Other reforms</strong>
+            <li>Repeal Illinois Brick and Hanover Shoe</li>
+            <li>New limits on antitrust immunity</li>
+            <li>Safe harbor for data portability and interoperability cooperation</li>
+            <li>Civil‌ ‌fines ‌for‌ ‌antitrust violations‌ and prohibition from federal contract awards for 5 years</li>
+            <li>Limits effencies that companies can claim</li>
+          </ul>
+        </div>
+      </div>
+    <span class="bottom"><span class="source"></span><span class="gfx-logo"><img src="Law360@2x.png" style="width:100%;" /></span></span>
+  </div> -->
+
+  </div>
+  <br />
+  <script type="text/javascript" src="indexv3.js" defer></script>
+  <script type="text/javascript" src="runnerv3.js" defer></script>
+</body>
+
+</html>
