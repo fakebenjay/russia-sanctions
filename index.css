@@ -15,7 +15,7 @@ y/n legend move to top?
   overflow: auto;
 }
 
-#antitrust-table_wrapper {
+#usa-table_wrapper {
   font-size: 9pt;
 }
 
@@ -207,30 +207,30 @@ input[type='checkbox'] {
   max-width: 100%;
 }
 
-#antitrust-table div.row {
+#usa-table div.row {
   width: 100%;
   margin: 0;
 }
 
-#antitrust-table td {
+#usa-table td {
   text-align: center;
   vertical-align: middle !important;
   max-width: 200px;
 }
 
-#antitrust-table tr.republican {
+#usa-table tr.republican {
   background-color: pink !important;
 }
 
-#antitrust-table tr.democratic {
+#usa-table tr.democratic {
   background-color: lightsteelblue !important;
 }
 
-#antitrust-table tfoot {
+#usa-table tfoot {
   display: table-row-group;
 }
 
-#antitrust-table tfoot th {
+#usa-table tfoot th {
   padding: 0 !important;
 }
 
@@ -294,7 +294,7 @@ li[data-dt-column="7"] .dtr-title {
   display: none;
 }
 
-/* #antitrust-table_length {
+/* #usa-table_length {
   display: none;
 } */
 .dataTables_scrollFoot {
@@ -302,7 +302,7 @@ li[data-dt-column="7"] .dtr-title {
 }
 
 @media screen and (min-width: 401px) {
-  #antitrust-table_filter label {
+  #usa-table_filter label {
     float: right;
   }
 
@@ -312,7 +312,7 @@ li[data-dt-column="7"] .dtr-title {
 }
 
 @media screen and (max-width: 400px) {
-  #antitrust-table_filter label {
+  #usa-table_filter label {
     width: 100%;
   }
 
@@ -322,22 +322,22 @@ li[data-dt-column="7"] .dtr-title {
 }
 
 @media screen and (min-width: 769px) {
-  #antitrust-table_filter {
+  #usa-table_filter {
     width: 50%;
   }
 
-  /* #antitrust-table {
+  /* #usa-table {
     width: 100% !important;
     display: block;
     margin: 0 !important;
   }
 
-  #antitrust-table thead, #antitrust-table tfoot {
+  #usa-table thead, #usa-table tfoot {
     display: inline-block;
     width: 100%;
   }
 
-  #antitrust-table tbody {
+  #usa-table tbody {
     height: 400px;
     display: inline-block;
     width: 100%;
@@ -355,27 +355,27 @@ li[data-dt-column="7"] .dtr-title {
     display: flex !important;
     box-sizing: border-box !important;
   } */
-  #antitrust-table td:nth-child(1) {
+  #usa-table td:nth-child(1) {
     width: 200px !important;
   }
 
-  /* #antitrust-table th:nth-child(1) {
+  /* #usa-table th:nth-child(1) {
     width: 240px !important;
   }
 
-  #antitrust-table th:nth-child(2) {
+  #usa-table th:nth-child(2) {
     width: 95px !important;
   }
 
-  #antitrust-table th:nth-child(4) {
+  #usa-table th:nth-child(4) {
     width: 80px !important;
   }
 
-  #antitrust-table th:nth-child(5) {
+  #usa-table th:nth-child(5) {
     width: 107px !important;
   }
 
-  #antitrust-table th:nth-child(7) {
+  #usa-table th:nth-child(7) {
     width: 106px !important;
   } */
   .table-condensed th, .table-condensed td {
@@ -426,7 +426,7 @@ li[data-dt-column="7"] .dtr-title {
     border-right: none;
   }
 
-  #antitrust-table tfoot {
+  #usa-table tfoot {
     display: none;
   }
 

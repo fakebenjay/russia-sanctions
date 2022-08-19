@@ -12,7 +12,7 @@ function populateDataTable(data) {
 
   console.log("populating data table...");
   // clear the table before populating it with more data
-  var table = $("#antitrust-table").DataTable().clear();
+  var table = $("#usa-table").DataTable().clear();
 
   var dataset = data.table.rows
   var length = dataset.length;
@@ -34,10 +34,10 @@ function populateDataTable(data) {
 
     var dataParam = [name, alias, type, date, allegation, desc]
 
-    $('#antitrust-table').dataTable().fnAddData(dataParam);
+    $('#usa-table').dataTable().fnAddData(dataParam);
   }
   if (window.innerWidth > 767) {
-    $("#antitrust-table tfoot th").each(function(i) {
+    $("#usa-table tfoot th").each(function(i) {
       if ($(this).text() !== '') {
         var colName = $(this).text()
         if (colName === 'Date') {
@@ -131,7 +131,7 @@ function populateDataTable(data) {
   }
   //
 
-  document.querySelector('#antitrust-table_wrapper').insertAdjacentHTML('afterbegin', "<button id='reset-btn'>Clear All Filters</button>")
+  document.querySelector('#usa-table_wrapper').insertAdjacentHTML('afterbegin', "<button id='reset-btn'>Clear All Filters</button>")
   document.getElementById('reset-btn')
     .addEventListener('click', (e) => {
       e.preventDefault()
@@ -143,7 +143,7 @@ function populateDataTable(data) {
       document.querySelectorAll('.selectize-input input').forEach(d => d.value = '')
       $('.selectize-input input').trigger('change')
 
-      $("#antitrust-table").DataTable().search('').draw()
+      $("#usa-table").DataTable().search('').draw()
     })
 
   if (window.innerWidth > 768) {

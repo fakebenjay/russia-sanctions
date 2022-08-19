@@ -41,7 +41,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.table').dataTable({
+  $('#usa-table').dataTable({
     dom: 'frtip',
     // "scrollY": "500px",
     // "scrollCollapse": true,
